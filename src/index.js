@@ -372,7 +372,7 @@ export default function (options) {
 
     // Returns an `image` element representing the QR code for the given settings.
     function createImage(settings) {
-        return jq('<img/>').attr('src', createCanvas(settings)[0].toDataURL('image/png'));
+        return createCanvas(settings)[0].toDataURL('image/png')
     }
 
     // Returns a `div` element representing the QR code for the given settings.
