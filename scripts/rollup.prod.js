@@ -7,7 +7,7 @@ import json from 'rollup-plugin-json'
 const config_uglify = {
     input: 'src/index.js',
     output: {
-        file: `dist/${name}/${name}-${version}.min.js`,
+        file: `dist/${name}-${version}.min.js`,
         name: 'base',
         format: 'umd'
     },
@@ -22,9 +22,9 @@ const config_uglify = {
         uglify({
             output: {
                 comments: function (node, comment) {
-                    var text = comment.value
-                    var type = comment.type
-                    if (type == "comment2") {
+                    const text = comment.value
+                    const type = comment.type
+                    if (type === "comment2") {
                         // multiline comment
                         return /eslint/i.test(text)
                     }
@@ -37,7 +37,7 @@ const config_uglify = {
 const config = {
     input: 'src/index.js',
     output: {
-        file: `dist/${name}/${name}-${version}.js`,
+        file: `dist/${name}-${version}.js`,
         name: 'base',
         format: 'umd'
     },
