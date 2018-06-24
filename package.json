@@ -1,0 +1,48 @@
+{
+    "name": "qrcode",
+    "version": "1.0.0",
+    "description": "Dynamically generate QR codes",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "rollup -c scripts/rollup.dev.js -w",
+        "build": "rollup -c scripts/rollup.prod.js",
+        "test": "mocha -r jsdom-global/register -r babel-core/register"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SmilingXinyi/qrcode.git"
+    },
+    "keywords": [
+        "QR Code"
+    ],
+    "author": "Smiling Xinyi",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/SmilingXinyi/qrcode/issues"
+    },
+    "homepage": "https://github.com/SmilingXinyi/qrcode#readme",
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-preset-env": "^1.7.0",
+        "rollup": "^0.61.2",
+        "rollup-plugin-alias": "^1.4.0",
+        "rollup-plugin-babel": "^3.0.5",
+        "rollup-plugin-clear": "^2.0.7",
+        "rollup-plugin-generate-html-template": "^1.1.0",
+        "rollup-plugin-livereload": "^0.6.0",
+        "rollup-plugin-postcss": "^1.6.2",
+        "rollup-plugin-serve": "^0.4.2",
+        "rollup-plugin-uglify": "^4.0.0",
+        "rollup-plugin-yaml": "^1.1.0"
+    },
+    "babel": {
+        "presets": [
+            [
+                "env",
+                {
+                    "modules": false
+                }
+            ]
+        ]
+    }
+}
