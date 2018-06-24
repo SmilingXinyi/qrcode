@@ -34,6 +34,7 @@ const config_uglify = {
     ]
 }
 
+
 const config = {
     input: 'src/index.js',
     output: {
