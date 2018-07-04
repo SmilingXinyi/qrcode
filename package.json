@@ -1,5 +1,5 @@
 {
-    "name": "qrcode",
+    "name": "qrcode-js",
     "version": "1.0.0",
     "description": "Dynamically generate QR codes",
     "main": "src/index.js",
@@ -10,17 +10,19 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/SmilingXinyi/qrcode.git"
+        "url": "git+https://github.com/SmilingXinyi/qrcode-js.git"
     },
     "keywords": [
-        "QR Code"
+        "qr code",
+        "qr",
+        "qrcode"
     ],
     "author": "Smiling Xinyi",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/SmilingXinyi/qrcode/issues"
+        "url": "https://github.com/SmilingXinyi/qrcode-js/issues"
     },
-    "homepage": "https://github.com/SmilingXinyi/qrcode#readme",
+    "homepage": "https://github.com/SmilingXinyi/qrcode-js#readme",
     "devDependencies": {
         "babel-core": "^6.26.3",
         "babel-preset-env": "^1.7.0",
